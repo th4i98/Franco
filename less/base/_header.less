@@ -1,0 +1,85 @@
+
+.header {
+    &-top {
+        padding: 13.5px 0 13.5px 0;
+        text-align: center;
+        background-color: @bg-header;
+        font-family: 'OpenSans';
+        font-size: 14px;
+        font-weight: 400;
+        color: @text-header-color;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+            .web-welcome {
+                display: flex;
+                .welcome-icon {
+                    font-size: 12px;
+                    margin-right: 5px;
+                }
+            }           
+            .web-preferences {
+                display: flex;
+                .pref-btn {
+                    display: flex;
+                    padding-left: 30px;
+                    .setting-icon {
+                        margin-right: 5px;
+                    }
+                    .setting-btn {
+                        a {
+                            font-weight: 400;
+                            color: @text-header-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        padding: 19.5px 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 1px solid #dddddd;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+            align-items: center;
+            .logo img {
+                display: block;
+            }
+            .navbar {               
+                margin-right: 45px;
+                &-inner li{
+                    margin-right: 69px;
+                    margin-left: -18px;
+                    display: inline-block;
+                    
+                    .home-btn {
+                        color: #8262b5;
+                    }
+                    a {
+                        text-transform: uppercase;
+                    }
+                }
+                
+            }
+            .item-interaction {
+                display: flex;
+                
+                
+                .favorite-item {
+                    font-size: 27px;
+                    
+                }
+                .item-cart {
+                    font-size: 27px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}

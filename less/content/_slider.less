@@ -1,0 +1,95 @@
+.slider {
+  
+    &-item  {
+        position: relative;
+        background-image: url(/img/bg-slide.png);
+        
+        .title {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 80px;
+            margin-bottom: 50px;
+            .sub-title  {
+                // margin-top: 80px;
+                margin-bottom: 10px;
+                font-size: 12px;
+                font-weight: 700;
+                color:#8262b5;
+                letter-spacing: 6px;
+            }
+            .main-title {
+                font-size: 24px;
+                font-weight: 700;
+                color: #000;
+                letter-spacing: 3px;
+            }
+            .line {
+                width: 50px;
+                height: 1px;
+                margin-top: 15px;
+                margin-bottom: 23px;
+                background-color: #8262b5;
+                position: absolute;
+                left: 48.3%;
+            }
+        }
+        .post {
+            &-item  {
+              margin-bottom: 110px;
+                img {
+                    .extra4px-remove;
+                }
+                .col(33.33333%);
+                position: relative;
+                .date-info {
+                    position: absolute;
+                    top: 4%;
+                    right: 75%;
+                    text-align: center;
+                    color: #fff;
+                    background: #a1d1dd;
+                    border: 1px solid #fff;
+                    &-month {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    &-day {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+                .post-name {
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 20px 0 13px 19px;
+                    background-color: #fff;
+                    a:hover {
+                        color: #8a6cba;
+                    }
+                }
+                .post-description {
+                    font-family: 'OpenSans';
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 13px 0 18px 19px;
+                    background-color: #fff;
+                    border-bottom: 1px solid #ededed;
+                }
+                .post-info {
+                    padding: 21px 0 21px 19px;
+                    background-color: #fff;
+                    color: #c8c8c8;
+                    i {
+                        margin-right: 5px;
+                    }
+                    .comment {
+                        padding-right: 32px;
+                        
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+}

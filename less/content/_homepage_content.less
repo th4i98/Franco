@@ -1,0 +1,164 @@
+.banner {
+  margin-top: 30px;
+
+  &-left {
+    .col(66.667%);
+    position: relative;
+    &-content {
+      position: absolute;
+      top: 55%;
+      left: 44%;
+      .text-ads {
+        font-family: "Pacifico";
+        font-size: 30px;
+      }
+      .ads-btn-1 {
+        .shop-now-btn;
+        right: 0%;
+      }
+    }
+  }
+  &-inner img {
+    .extra4px-remove;
+  }
+
+  &-right {
+    .col(33.333%);
+    .banner-col {
+      margin: -15px 0;
+    }
+    &-item {
+      position: relative;
+      padding: 15px 0;
+
+      .text-content {
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+        .text-item {
+          .upper-content {
+            font-size: 16px;
+            font-weight: 400;
+          }
+          .lower-content {
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+        .ads-btn-2 {
+          .shop-now-btn;
+          margin-top: 17px;
+        }
+      }
+    }
+    &-item img {
+      .extra4px-remove;
+    }
+  }
+  // .ads-btn-1, .ads-btn-2 {
+  //     font-size: 14px;
+  //     background-color: #8262b5;
+  //     padding: 11px 17px;
+  //     position: absolute;
+  // }
+}
+
+.top-selling {
+  margin-bottom: 74px;
+  .title {
+    .brand-name {
+      margin-top: 79px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #8262b5;
+      text-transform: uppercase;
+    }
+    .feature-item {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .hl {
+      width: 50px;
+      height: 1px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      background-color: #8262b5;
+    }
+  }
+  .product-item {
+    margin-top: 25px;
+    .col(25%);
+    .image {
+      position: relative;
+      .btn a {
+        .add-cart-btn;
+        top: 85%;
+        left: 2%;
+        &:hover {
+          color: #8262b5;
+        }
+      }
+    }
+  }
+  .item-content {
+    .item-name {
+        margin-top: 19px;
+        margin-bottom: 13px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .item-rating {
+      .score {
+        display: block;
+        font-size: 12px;
+        position: relative;
+        overflow: hidden;
+
+        &-wrap {
+          display: inline-block;
+          position: relative;
+          overflow: hidden;
+          height: 15px;
+          .stars-active {
+            color: #f8ba04;
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            overflow: hidden;
+          }
+          .stars-inactive {
+            color: grey;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      
+    }
+    .item-price {
+        margin: 5px 0;
+        .old-price {
+          text-decoration: line-through;
+          color: #a0a0a0;
+          font-family: "OpenSans";
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .new-price {
+            color: #8262b5;
+            font-family: 'OpenSans';
+            font-size: 16px;
+            font-weight: 700;
+        }
+      }
+  }
+}
+
+
