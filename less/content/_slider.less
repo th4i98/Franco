@@ -48,15 +48,19 @@
                     text-align: center;
                     color: #fff;
                     background: #a1d1dd;
-                    border: 1px solid #fff;
-                    &-month {
-                        font-size: 14px;
-                        font-weight: 400;
-                    }
-                    &-day {
-                        font-size: 16px;
-                        font-weight: 700;
-                    }
+                    padding: 5px 5px;
+                    &-border {
+                        border: 1px solid #fff;
+                        padding: 6px 12px;
+                        .date-info-month {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        .date-info-day {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                    }                                       
                 }
                 .post-name {
                     font-size: 16px;
@@ -88,6 +92,27 @@
                         
                     }
                     
+                }
+            }
+        }
+        .slide.slick-slider.slick-dotted {
+            margin-bottom: 0;
+        }
+        .slide {           
+            .slick-dots {
+                bottom: 50px;
+                li button {
+                    &:before {
+                        font-size: 35px;
+                        color: #b4a7c8;
+                        opacity: 1;
+                    }
+                }
+                .slick-active button {
+                    &:before {                     
+                        color:#8262b5;
+                        font-size: 55px;
+                    }
                 }
             }
         }

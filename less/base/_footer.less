@@ -1,9 +1,150 @@
 .footer {
-    
+    background-color: #222222;
     &-section {
-        .col(33.3333%);
+        &-1 {
+            .col(25%);
+            .title {
+                font-size: 16px;
+                font-weight: 400;
+                color: #dbdbdb;
+                margin-top: 60px;    
+            }
+            .border {
+                border: 1px solid #393939;
+                margin: 30px 0;
+            }
+            .about-content {
+                color: #7a7a7a;
+                font-family: 'OpenSans';
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .social-link ul{
+                display: flex;
+                float: left;
+                li {              
+                    margin: 50px 32px 50px 0;
+                }
+                i {
+                    color: #828282;
+                }
+            }
+        }
+        &-empty {
+            .col(8.3333%)
+        }
+        &-2 {
+            .col(33.3333%);
+            .title {
+                font-size: 16px;
+                font-weight: 400;
+                color: #dbdbdb;
+                margin-top: 60px;    
+            }
+            .border {
+                border: 1px solid #393939;
+                margin: 30px 0;
+            }
+            .main-nav {
+                .col(50%);
+                &-inner {
+                    margin-top: -10px;
+                    li {
+                        margin: 9px 0;
+                        a {
+                            color:#888888;
+                            &:hover {
+                                color: #fff;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                font-family: 'OpenSans';
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .sub-nav {
+                .col(50%);
+                &-inner {
+                    margin-top: -10px;
+                    li {
+                        margin: 9px 0;
+                        a{
+                            color:#888888;
+                            &:hover {
+                                color: #fff;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                font-family: 'OpenSans';
+                font-size: 14px;
+                font-weight: 400;
+                
+            }
+        }
+        &-3 {
+            .col(25%);
+            .title {
+                font-size: 16px;
+                font-weight: 400;
+                color: #dbdbdb;
+                margin-top: 60px;    
+            }
+            .border {
+                border: 1px solid #393939;
+                margin: 30px 0;
+            }
+            .detail ul li{
+                color:#888888;
+                margin: 10px 0;
+                i {
+                    margin-right: 15px;
+                }
+            }
+            a {
+                color:#888888;
+            }
+
+        }
     }
-    .main-nav {
-        .col(50%);
+    .border-line {
+        border: 1px solid #393939;
+    }
+    .sub-footer {
+        background-color: #222222;   
+        padding: 25px 0;    
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            .copy-right {
+                display: flex;
+                color: #888888;
+                .icon {
+                    margin-right: 5px;
+                }
+                .content  {
+                    i{
+                        color: #ff4628;
+                    }
+                    span{
+                        color: #fff;
+                    }
+                    
+                }                              
+            }
+            .payment {              
+                &-method {
+                    // display: flex;              
+                    color: #888888;  
+                    li {
+                        display: inline-block
+                    }
+                }
+                
+            }
+        }  
     }
 }
