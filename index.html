@@ -23,12 +23,18 @@
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </head>
+<div class="cover"></div>
 <body>
     <div class="wrapper">
         <!-- Header -->
         <div class="header">
             <div class="header-top">
                 <div class="container-fluid">
+                    <!-- Logo mobile -->
+                    <!-- <div class="logo">
+                        <img src="/img/logo_03.png" alt="">
+                    </div> -->
+                    <!-- End Logo mobile -->
                     <div class="header-top-inner">
                         <div class="web-welcome">
                             <div class="welcome-icon"><i class="fa-regular fa-bookmark"></i></div>
@@ -57,7 +63,9 @@
                         <!-- End Logo -->
                         <!-- Navigation bar -->
                         <div class="navbar">
-                            <ul class="navbar-inner">
+                            <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
+                            <ul class="navbar-ul">
+                                <div class="nav-header">Navigation</div>
                                 <li><a class="home-btn" href="#">Home</a></li>
                                 <li><a href="#">Women</a></li>
                                 <li><a href="#">Men</a></li>
@@ -102,12 +110,13 @@
                             <div class="row">
                                 <div class="banner-left">
                                     <div class="banner-inner">
-                                        <img src="img/ads.jpg" alt="">                                       
+                                        <img src="img/ads.jpg" alt=""> 
+                                        <div class="banner-left-content">
+                                            <div class="text-ads">Two High-end Materials</div>
+                                            <a href="" class="ads-btn-1">Shop Now</a>
+                                        </div>                                      
                                     </div>
-                                    <div class="banner-left-content">
-                                        <div class="text-ads">Two High-end Materials</div>
-                                        <a href="" class="ads-btn-1">Shop Now</a>
-                                    </div>
+                                    
                                 </div>
                                 <div class="banner-right">
                                     <div class="banner-col">
@@ -123,8 +132,10 @@
                                         </div> 
                                         <!-- End Banner right item 1 -->
                                         <!-- Banner right item 2 -->
-                                        <div class="banner-right-item">
-                                            <img src="img/ads3_08.jpg" alt="">
+                                        <div class="banner-right-item right">
+                                            <div class="banner-right-item-img">
+                                                <img src="img/ads3_08.jpg" alt="">
+                                            </div>
                                             <div class="text-content">   
                                                 <div class="text-item">
                                                     <div class="upper-content">folio</div>
@@ -573,7 +584,7 @@
                     <div class="newsletter"></div>
                     <!-- End Newsletter -->
                 </div>
-                <!-- End Page main -->
+                <!-- End Page main --> 
             </div>
         </div>
         <!-- End Main contents -->
@@ -651,9 +662,6 @@
                 </div> 
             </div>
             <div class="border-line"></div>
-            <div class="container-fluid">
-                
-            </div>
             <div class="container">
                 <div class="sub-footer">
                     <div class="sub-footer-inner">
@@ -678,12 +686,53 @@
         
     </div>
     <script>
+        // $('.slide').slick({
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 2,
+        //     dots: true,
+        //     prevArrow: false,
+        //     nextArrow: false
+        // });
+    </script>   
+    <script class="">
         $('.slide').slick({
-            infinite: true,
+            dots: true,
+            infinite: false,
+            prevArrow: false,
+            nextArrow: false,   
+            speed: 300,
             slidesToShow: 3,
-            slidesToScroll: 2,
-            dots: true
+            slidesToScroll: 3,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
-    </script>
+    </script>                 
 </body>
 </html>

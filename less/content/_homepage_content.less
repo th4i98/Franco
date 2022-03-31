@@ -2,21 +2,29 @@
   margin-top: 30px;
 
   &-left {
+    overflow: hidden;
     .col(66.667%);
     position: relative;
-    &-content {
-      position: absolute;
-      top: 55%;
-      left: 44%;
-      .text-ads {
-        font-family: "Pacifico";
-        font-size: 30px;
+    .banner-inner {
+      img {
+        width: 100%
       }
-      .ads-btn-1 {
-        .shop-now-btn;
-        right: 0%;
+      .banner-left-content {
+        position: absolute;
+        // width: 100%;
+        top: 56.5%;
+        left: 44%;
+        .text-ads {
+          font-family: "Pacifico";
+          font-size: 30px;
+        }
+        .ads-btn-1 {
+          .shop-now-btn;
+          right: 0.5%;
+        }
       }
     }
+    
   }
   &-inner img {
     .extra4px-remove;
@@ -28,6 +36,7 @@
       margin: -15px 0;
     }
     &-item {
+      overflow: hidden;
       position: relative;
       padding: 15px 0;
 
