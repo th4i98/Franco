@@ -553,6 +553,7 @@ body {
   margin: 30px 0;
 }
 .footer-section-3 .detail ul li {
+  display: flex;
   color: #888888;
   margin: 10px 0;
 }
@@ -561,6 +562,9 @@ body {
 }
 .footer-section-3 a {
   color: #888888;
+}
+.footer-section-3 a .lower-address {
+  margin-top: 10px;
 }
 .footer .border-line {
   border: 1px solid #393939;
