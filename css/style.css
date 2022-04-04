@@ -290,7 +290,7 @@ body {
 .banner-left .banner-inner .banner-left-content {
   position: absolute;
   top: 56.5%;
-  left: 44%;
+  right: 100px;
 }
 .banner-left .banner-inner .banner-left-content .text-ads {
   font-family: "Pacifico";
@@ -668,7 +668,7 @@ body {
     width: 100%;
   }
   .banner-left .banner-inner .banner-left-content {
-    left: 41%;
+    right: 45px;
   }
   .banner-left .banner-inner .banner-left-content .text-ads {
     font-size: 40px;
@@ -710,8 +710,16 @@ body {
     top: 88%;
     left: 3%;
   }
+  .footer .footer-section-empty {
+    width: 5%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
 }
 @media all and (max-width: 768px) {
+  .banner-left .banner-inner .banner-left-content {
+    right: 55px;
+  }
   .banner-left .banner-inner .banner-left-content .text-ads {
     font-size: 30px;
   }
@@ -744,9 +752,7 @@ body {
     padding-right: 15px;
   }
   .footer-section-empty {
-    width: 0;
-    box-sizing: border-box;
-    padding: 0 15px;
+    display: none;
   }
 }
 @media all and (max-width: 576px) {
@@ -755,6 +761,9 @@ body {
   }
   .header-bottom-inner .navbar-ul {
     width: 70vw;
+  }
+  .banner-left .banner-inner .banner-left-content {
+    right: 30px;
   }
   .banner-left .banner-inner .banner-left-content .text-ads {
     font-size: 23px;
@@ -829,6 +838,9 @@ body {
   }
 }
 @media all and (max-width: 375px) {
+  .banner-left .banner-inner .banner-left-content {
+    right: 20px;
+  }
   .banner-left .banner-inner .banner-left-content .text-ads {
     font-size: 19px;
   }
