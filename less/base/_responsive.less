@@ -103,6 +103,9 @@
     .footer {
         .row {
             justify-content: center;
+            .footer-section-1, .footer-section-2, .footer-section-3 {
+                .col(33.33333%);
+            }
         }
     }      
 }
@@ -234,15 +237,22 @@
             }
         }
     }       
+    // .footer {
+    //     &-section {
+    //         &-empty {
+    //             display: none;
+    //         }      
+    //         &-1 {
+    //             margin-bottom: -45px;
+    //         }
+    //     }
+    // }
     .footer {
-        &-section {
-            &-empty {
-                display: none;
-            }
-            &-1, &-2, &-3 {
+        .row {
+            .footer-section-1, .footer-section-2, .footer-section-3 {
                 .col(100%);
             }
-            &-1 {
+            .footer-section-1 {
                 margin-bottom: -45px;
             }
         }
